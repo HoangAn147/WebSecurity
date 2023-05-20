@@ -18,9 +18,12 @@ public class HibernateUtility {
         pros.put(Environment.DIALECT, "org.hibernate.dialect.MySQLDialect");
         pros.put(Environment.DRIVER, "com.mysql.cj.jdbc.Driver");
 
-        pros.put(Environment.URL, "jdbc:mysql://localhost:3306/a3hshop");
-        pros.put(Environment.USER, "root");
-        pros.put(Environment.PASS, "123456");
+//        pros.put(Environment.URL, "jdbc:mysql://localhost:3306/a3hshop");
+//        pros.put(Environment.USER, "root");
+//        pros.put(Environment.PASS, "123456");
+        pros.put(Environment.URL, "jdbc:mysql://us-cdbr-east-06.cleardb.net:3306/heroku_e1964613066b423");
+        pros.put(Environment.USER, "b0a4c10073fdbc");
+        pros.put(Environment.PASS, "54514ae6");
 
         conf.setProperties(pros);
         conf.addAnnotatedClass(KhachEntity.class);
